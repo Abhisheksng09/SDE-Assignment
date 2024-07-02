@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5413378d83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services1">Projects</a></li>
+                <!-- <li><a href="#">Achivements</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Engineering Student</p>
+            <h1>Hi, I'm <span>Abhishek</span><br> Negi From Dehradun,<br>India</h1>
+        </div>
+    </div>
+   </div>
+
+   <!-------------about----------------- -->
+   <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="1714184709840.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Warm welcome to everyone. <br> I am Abhishek Negi. I live in Dehradun, Uttarakhand. Talking about acadamics, I did
+                        my schooling from CBSE board with through out 1st division. Currently, I have opted B-tech with major in computer 
+                        science from Graphic Era Hill University. As far as, extra curicular activites concern, i have participated in various 
+                        school & college level events such as hackathons, sports competition, etc and won handful of prizes along with
+                        certificate. Apart from this, my hobbies are travelling & coding. By summing up, my area of interest is to work in 
+                        the domain of machine learning.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Machine Learning</span><br>Using algorithms to make predictive models</li>
+                            <li><span>Web Development</span><br>Full Stack Development</li>
+                            <li><span>Databases</span><br>RDBMS-Mysql, SQLite, Oracle</li>
+                            <li><span>Problem Solving</span><br>Data structures & algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>SDE Intern at TBI GEU</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-present</span><br>B.Tech from Graphic Era Hill University</li>
+                            <li><span>2020</span><br>Senior Secondary from APS</li>
+                            <li><span>2018</span><br>Secondary from APS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <!-- -------------Projects----------------- -->
+   <div class="services" id="services1">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-train"></i>
+                <h2>Railway Management System</h2>
+                <p>A graphical user interface with backend database connectivity. The system provides various railway operations, such as ticket bookings, passenger data management, and train schedule inquiries.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hands-asl-interpreting"></i>
+                <h2>Sign Language Detection</h2>
+                <p>The system leverages advanced computer vision and machine learning techniquies to recognize and interpret Indian Sign language gestures.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-shield"></i>
+                <h2>Cryptography Security Model</h2>
+                <p>The model achieves a secure communication by protecting sensetive data through encryption and enabling its retrieval through decryption.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mountain-sun"></i>
+                <h2>Uttarakhand Tourism</h2>
+                <p>A website which shows popular destinations of Uttarakhand and its culture.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+<!----------------------------- Portfolio ------------------------------>
+  
+<!-- --------------------------Contact------------------------------ -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> abhisheksinghnegi2003@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+
+            <div class="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @  <i class="fa-brands fa-phoenix-squadron"></i> Abhishek Negi</p>
+    </div>
+</div>
+
+
+
+   <script>
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+   </script>
+
+   <script>
+
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu()
+    {
+        sidemenu.style.right="0";
+    }
+    function closemenu()
+    {
+        sidemenu.style.right="-200px";
+    }
+
+   </script>
+</body>
+</html>
